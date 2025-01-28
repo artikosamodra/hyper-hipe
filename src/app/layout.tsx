@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "./components/templates/Navbar";
 import { poppins } from "./fonts/GoogleFont";
+import Background from "./components/molecules/Background";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,7 +16,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${poppins.className} text-white antialiased`}>
+      <body className={`${poppins.className} text-white antialiased relative`}>
+        <Background />
         <Navbar />
         {children}
       </body>
