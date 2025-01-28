@@ -12,7 +12,7 @@ const NavMenu: React.FC<MenuProps> = ({ handleMenuSelect }) => {
     <div className="w-full h-full flex justify-center">
       <div className="lg:absolute relative lg:top-[44px] top-0 z-10 w-[240px] h-[164px] border-1">
         <div
-          className={`${inter.className} flex flex-col gap-[16px] text-[14px] bg-white text-black rounded-[8px] font-medium`}
+          className={`${inter.className} flex flex-col gap-[16px] text-[14px] leading-[20px] bg-white text-black rounded-[8px] font-medium`}
         >
           {menubar.map((nav, index) => (
             <Button

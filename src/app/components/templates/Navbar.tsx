@@ -23,7 +23,7 @@ const Navbar = () => {
         </div>
 
         <div
-          className={`w-full col-span-2 lg:flex justify-start items-center lg:top-0 top-[60px] lg:bg-opacity-0 bg-opacity-70 bg-black pb-5 z-20 ${
+          className={`w-full col-span-2 lg:flex justify-start items-center lg:bg-opacity-0 bg-opacity-70 bg-black lg:py-0 py-5 lg:top-0 top-[60px] z-20 ${
             show ? "lg:relative absolute" : "hidden"
           }`}
         >
