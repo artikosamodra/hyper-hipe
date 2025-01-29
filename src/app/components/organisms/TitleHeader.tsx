@@ -1,6 +1,6 @@
 import React from "react";
 import Balon from "../atoms/Balon";
-import Titles from "../atoms/Title";
+import Titles from "../atoms/Titles";
 import { motion } from "framer-motion";
 
 const TitleHeader = () => {
