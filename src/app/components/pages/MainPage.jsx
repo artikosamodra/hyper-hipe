@@ -1,7 +1,6 @@
 import React from "react";
 import Header from "../templates/Header";
 import { poppins } from "@/app/fonts/GoogleFont";
-import ProfileCard from "../organisms/ProfileCard";
 import ProfileSlider from "../templates/ProfileSlider";
 
 const MainPage = () => {
@@ -9,9 +8,9 @@ const MainPage = () => {
     <div
       className={`container mx-auto w-full h-full ${poppins.className} font-black flex flex-col justify-center items-center relative my-[40px]`}
     >
-      <div className="grid lg:grid-cols-2 grid-cols-1 w-full h-full relative">
+      <div className="grid lg:grid-cols-2 grid-cols-1 w-full h-full relative gap-[14px]">
         {/* Header */}
-        <div className="w-full h-full flex justify-center items-center py-[60px]">
+        <div className="w-full h-full flex justify-center items-center py-[60px] lg:px-0 px-[16px]">
           <Header />
         </div>
 
