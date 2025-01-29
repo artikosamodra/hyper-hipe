@@ -1,3 +1,4 @@
+'use client'
 import React from "react";
 import TitleHeader from "../organisms/TitleHeader";
 import MenuHeader from "../organisms/MenuHeader";

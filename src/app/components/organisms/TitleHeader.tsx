@@ -1,16 +1,27 @@
 import React from "react";
 import Balon from "../atoms/Balon";
 import Titles from "../atoms/Title";
+import { motion } from "framer-motion";
 
 const TitleHeader = () => {
   return (
     <div className="w-full h-full flex flex-col text-[#FFFFFF] gap-[24px]">
       {/* Balon Text */}
-      <div className="flex justify-start items-center">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.3 }}
+        className="flex justify-start items-center"
+      >
         <Balon balonText="풀타임, 파트타임" />
-      </div>
+      </motion.div>
 
-      <div>
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        className="w-full h-full flex flex-col gap-[16px]"
+      >
         {/* Title */}
         <Titles addClass="text-[48px] leading-[62.4px]">
           <h1>
@@ -30,7 +41,7 @@ const TitleHeader = () => {
             <h3>개발자가 필요하신가요?</h3>
           </Titles>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
