@@ -28,7 +28,7 @@ const CompanyCard: React.FC<CompanyCardProps> = ({ src, alt, head, url }) => {
           <Texts>바로가기</Texts>
           <div className="w-[20px] h-[20px] bg-[#EFF1F6] rounded-[8px]">
             <ImageIcons
-              src="/img/arrow-right.png"
+              src="/img/arrowright.png"
               alt={alt}
               width={40}
               height={40}
