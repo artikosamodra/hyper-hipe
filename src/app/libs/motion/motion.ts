@@ -11,15 +11,15 @@ export const cardVariants = {
     opacity: [0, 1],
     scale: 0.9,
     zIndex: 1,
-    position: "absolute",
+    position: "absolute" as "absolute",
     transition: { duration: 0.5 },
   },
   right: {
-    x: 110,
+    x: 100,
     opacity: [0, 1],
     scale: 0.9,
     zIndex: 1,
-    position: "absolute",
+    position: "absolute" as "absolute",
     transition: { duration: 0.5 },
   },
 };
@@ -37,7 +37,7 @@ export const mobileCardVariants = {
     opacity: [0, 1],
     scale: 0.6,
     zIndex: 1,
-    // position: "absolute",
+    position: "absolute" as "absolute",
     transition: { duration: 0.5 },
   },
   right: {
@@ -45,11 +45,10 @@ export const mobileCardVariants = {
     opacity: [0, 1],
     scale: 0.6,
     zIndex: 1,
-    // position: "absolute",
+    position: "absolute" as "absolute",
     transition: { duration: 0.5 },
   },
 };
-
 export const tooltipVariants = {
   hidden: { opacity: 0, y: -10 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },

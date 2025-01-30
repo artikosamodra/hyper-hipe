@@ -27,6 +27,6 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "src/app/components/organisms/NavContact.tsx"
-  ],
+, "src/app/libs/motion/motion.ts"  ],
   "exclude": ["node_modules"]
 }
