@@ -8,7 +8,7 @@ const MenuHeader = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className="grid grid-cols-3 w-full h-full gap-[48px]"
+      className="grid grid-cols-3 w-full h-full gap-[48px] my-[60px]"
     >
       <MenuCard
         titleCard="평균 월 120만원"

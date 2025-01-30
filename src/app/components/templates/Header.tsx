@@ -5,7 +5,7 @@ import MenuHeader from "../organisms/MenuHeader";
 
 const Header = () => {
   return (
-    <div className="w-full h-full flex flex-col justify-center items-center gap-[60px]">
+    <div className="w-full h-full flex flex-col justify-center items-center">
       <TitleHeader />
       <MenuHeader />
     </div>
