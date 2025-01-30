@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const TitleHeader = () => {
   return (
-    <div className="w-full h-full flex flex-col text-[#FFFFFF] gap-[24px] lg:pt-[40px] pt-0">
+    <div className="w-full h-full flex flex-col text-[#FFFFFF] gap-[24px] lg:pt-[40px] pt-0 lg:pb-[60px] pb-0">
       {/* Balon Text */}
       <motion.div
         initial={{ opacity: 0 }}
