@@ -13,7 +13,7 @@ const Navbar = () => {
   };
   return (
     <div className="w-full h-full">
-      <div className="container mx-auto w-full h-[60px] flex items-center justify-between grid lg:grid-cols-3 grid-cols-2 flex items-center relative">
+      <div className="container mx-auto w-full h-[60px] flex items-center justify-between grid lg:grid-cols-3 grid-cols-2 flex items-center relative lg:px-0 px-[16px]">
         <div className="">
           <NavLogo />
         </div>

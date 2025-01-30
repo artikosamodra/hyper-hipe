@@ -7,11 +7,11 @@ import Slideshow from "../templates/Slideshow";
 const MainPage = () => {
   return (
     <div
-      className={`container mx-auto w-full h-full ${poppins.className} font-black flex flex-col justify-center items-center relative mt-[60px]`}
+      className={`container mx-auto w-full h-full ${poppins.className} font-black flex flex-col relative`}
     >
       <div className="grid lg:grid-cols-2 grid-cols-1 w-full h-full relative gap-[14px]">
         {/* Header */}
-        <div className="w-full h-full flex justify-center items-center py-[60px] lg:px-0 px-[16px]">
+        <div className="w-full h-full flex justify-center items-center lg:px-0 px-[16px] lg:my-0 my-[36px]">
           <Header />
         </div>
 
