@@ -7,7 +7,7 @@ import Slideshow from "../templates/Slideshow";
 const MainPage = () => {
   return (
     <div
-      className={`container mx-auto w-full h-full ${poppins.className} font-black flex flex-col relative`}
+      className={`container mx-auto w-full h-full ${poppins.className} font-black flex flex-col relative lg:py-[60px] py-0`}
     >
       <div className="grid lg:grid-cols-2 grid-cols-1 w-full h-full relative gap-[14px]">
         {/* Header */}

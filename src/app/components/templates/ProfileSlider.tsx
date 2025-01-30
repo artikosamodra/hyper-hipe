@@ -52,7 +52,7 @@ const ProfileSlider = () => {
       variants={tooltipVariants}
       initial="hidden"
       animate="visible"
-      className="w-full h-full flex flex-col gap-[32px]"
+      className="w-full h-full flex flex-col md:gap-[32px] gap-0"
     >
       <BalonProfile addClass="flex justify-center items-center text-[#00C696] gap-[10px] px-[16px] py-[8px]">
         <ImageIcons
@@ -66,7 +66,7 @@ const ProfileSlider = () => {
 
       <div className=" w-full flex">
         <div className="w-full h-full mx-auto gap-[24px] flex justify-center items-center rounded-[12px] relative">
-          <div className="flex z-10">
+          <div className="flex z-10 absolute left-0 bg-gray-300 md:bg-opacity-0 bg-opacity-70 py-[10px] rounded-[6px]">
             <button onClick={handlePrev} disabled={disableBtn}>
               <Icons IconName="CaretLeft" size={32} weight="bold" />
             </button>
@@ -74,7 +74,7 @@ const ProfileSlider = () => {
           {datacards.map((card, index) => (
             <motion.div
               key={card.id}
-              className="w-full h-full rounded-[12px] flex justify-center"
+              className="rounded-[12px] flex justify-center"
               // initial={{ opacity: 0 }}
               variants={mediaScreen ? cardVariants : mobileCardVariants}
               animate={getPosition(index)}
@@ -89,7 +89,7 @@ const ProfileSlider = () => {
               />
             </motion.div>
           ))}
-          <div className="flex justify-end z-10">
+          <div className="flex justify-end z-10 absolute right-0 bg-gray-300 md:bg-opacity-0 bg-opacity-70 py-[10px] rounded-[6px]">
             <button onClick={handleNext} disabled={disableBtn}>
               <Icons IconName="CaretRight" size={32} weight="bold" />
             </button>
