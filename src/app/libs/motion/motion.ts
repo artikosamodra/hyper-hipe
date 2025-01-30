@@ -37,7 +37,7 @@ export const mobileCardVariants = {
     opacity: [0, 1],
     scale: 0.6,
     zIndex: 1,
-    position: "absolute" as "absolute",
+    position: "absolute" as const,
     transition: { duration: 0.5 },
   },
   right: {
@@ -45,7 +45,7 @@ export const mobileCardVariants = {
     opacity: [0, 1],
     scale: 0.6,
     zIndex: 1,
-    position: "absolute" as "absolute",
+    position: "absolute" as const,
     transition: { duration: 0.5 },
   },
 };
