@@ -23,7 +23,7 @@ const TitleHeader = () => {
         className="w-full h-full flex flex-col gap-[16px]"
       >
         {/* Title */}
-        <Titles addClass="md:text-[48px] text-[36px] md:leading-[62.4px] leading=[46.8px]">
+        <Titles addClass="md:text-[48px] text-[36px] md:leading-[62.4px] leading-[46.8px]">
           <h1>
             최고의 실력을 가진 <br />
             <span>외국인 인재를 찾고 계신가요?</span>

@@ -12,7 +12,7 @@ const Navbar = () => {
     setShow(!show);
   };
   return (
-    <div className="w-full h-full">
+    <div className="w-full h-full absolute top-0 z-10">
       <div className="container mx-auto w-full h-[60px] flex items-center justify-between grid lg:grid-cols-3 grid-cols-2 flex items-center relative lg:px-0 px-[16px]">
         <div className="">
           <NavLogo />

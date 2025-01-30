@@ -66,7 +66,7 @@ const ProfileSlider = () => {
 
       <div className=" w-full flex">
         <div className="w-full h-full mx-auto gap-[24px] flex justify-center items-center rounded-[12px] relative">
-          <div className="flex z-10 absolute left-0 bg-gray-300 md:bg-opacity-0 bg-opacity-70 py-[10px] rounded-[6px]">
+          <div className="flex z-10 absolute left-0 bg-gray-300 bg-opacity-0 py-[10px] rounded-[6px]">
             <button onClick={handlePrev} disabled={disableBtn}>
               <Icons IconName="CaretLeft" size={32} weight="bold" />
             </button>
@@ -89,7 +89,7 @@ const ProfileSlider = () => {
               />
             </motion.div>
           ))}
-          <div className="flex justify-end z-10 absolute right-0 bg-gray-300 md:bg-opacity-0 bg-opacity-70 py-[10px] rounded-[6px]">
+          <div className="flex justify-end z-10 absolute right-0 bg-gray-300 bg-opacity-0 py-[10px] rounded-[6px]">
             <button onClick={handleNext} disabled={disableBtn}>
               <Icons IconName="CaretRight" size={32} weight="bold" />
             </button>
