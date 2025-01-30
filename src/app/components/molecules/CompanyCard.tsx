@@ -2,7 +2,6 @@ import React from "react";
 import ImageIcons from "../atoms/IconImages";
 import Titles from "../atoms/Titles";
 import Link from "next/link";
-import Icons from "../atoms/Icons";
 import Texts from "../atoms/Texts";
 
 interface CompanyCardProps {

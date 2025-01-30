@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "./components/templates/Navbar";
 import { poppins } from "./fonts/GoogleFont";
-import Background from "./components/molecules/Background";
 import Footer from "./components/templates/Footer";
 
 export const metadata: Metadata = {
@@ -18,7 +17,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${poppins.className} text-white antialiased`}>
-        
         <Navbar />
         {children}
         <Footer />
