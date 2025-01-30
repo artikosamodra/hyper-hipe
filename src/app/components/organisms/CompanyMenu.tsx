@@ -4,7 +4,7 @@ import { datacompanycard } from "@/app/libs/data";
 
 const CompanyMenu = () => {
   return (
-    <div className="flex gap-[16px] w-full h-full">
+    <div className="flex lg:gap-[16px] gap-[8px]  w-full h-full grid lg:grid-cols-4 grid-cols-2">
       {datacompanycard.map((company, index) => (
         <CompanyCard
           key={index}

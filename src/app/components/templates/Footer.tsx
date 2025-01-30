@@ -11,15 +11,15 @@ const Footer = () => {
       <div
         className={`container mx-auto md:px-0 px-[16px] text-[#5E626F] ${poppins.className} font-black w-full h-full`}
       >
-        <div className={` w-full h-full flex flex-col gap-[43px]`}>
-          <div className="grid grid-cols-3 w-full h-full">
+        <div className={`w-full h-full flex flex-col gap-[60px]`}>
+          <div className="grid lg:grid-cols-3 grid-cols-1 gap-[18px]">
             <CompanyProfile />
-            <div className="col-span-2 w-full h-full flex items-start">
+            <div className="lg:col-span-2 col-span-1 w-full h-full flex items-start">
               <CompanyMenu />
             </div>
           </div>
 
-          <div className="grid grid-cols-3">
+          <div className="grid lg:grid-cols-3 grid-cols-1 w-full h-full lg:gap-0 gap-[36px]">
             <div className="flex gap-[11px]">
               <InfoCard
                 leader="상호명"
@@ -33,8 +33,8 @@ const Footer = () => {
               />
             </div>
 
-            <div className="col-span-2">
-              <div className="flex gap-[42px]">
+            <div className="lg:col-span-2 col-span-1 w-full h-full">
+              <div className="flex lg:flex-row flex-col lg:gap-[42px] gap-[36px]">
                 <InfoCard
                   leader="사업자등록번호 CIN"
                   position="427-86-01187"
