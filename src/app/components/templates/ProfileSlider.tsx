@@ -9,7 +9,7 @@ import { datacards } from "@/app/libs/data";
 import {
   cardVariants,
   mobileCardVariants,
-  padCardVariants,
+  tooltipVariants,
 } from "@/app/libs/motion/motion";
 import Icons from "../atoms/Icons";
 import { useMediaQuery } from "react-responsive";
@@ -48,7 +48,12 @@ const ProfileSlider = () => {
   };
 
   return (
-    <div className="w-full h-full flex flex-col gap-[32px]">
+    <motion.div
+      variants={tooltipVariants}
+      initial="hidden"
+      animate="visible"
+      className="w-full h-full flex flex-col gap-[32px]"
+    >
       <BalonProfile addClass="flex justify-center items-center text-[#00C696] gap-[10px] px-[16px] py-[8px]">
         <ImageIcons
           src="/img/dollar.png"
@@ -70,7 +75,7 @@ const ProfileSlider = () => {
             <motion.div
               key={card.id}
               className="w-full h-full rounded-[12px] flex justify-center"
-              initial={{ opacity: 0 }}
+              // initial={{ opacity: 0 }}
               variants={mediaScreen ? cardVariants : mobileCardVariants}
               animate={getPosition(index)}
               onAnimationComplete={animationComplete}
@@ -91,7 +96,7 @@ const ProfileSlider = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
