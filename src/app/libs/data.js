@@ -91,3 +91,34 @@ export const dataslideshow = [
     title: "해외 마케팅",
   },
 ];
+
+export const datacompanycard = [
+  {
+    id: 1,
+    src: "/img/company/icon-code.png",
+    alt: "icon-code",
+    head: "해외 개발자 원격 채용",
+    url: "/",
+  },
+  {
+    id: 2,
+    src: "/img/company/icon-avatar.png",
+    alt: "icon-avatar",
+    head: "외국인 원격 채용 (비개발)",
+    url: "/",
+  },
+  {
+    id: 3,
+    src: "/img/company/icon-kor.png",
+    alt: "icon-kor",
+    head: "한국어 가능 외국인 채용",
+    url: "/",
+  },
+  {
+    id: 4,
+    src: "/img/company/icon-gear.png",
+    alt: "icon-gear",
+    head: "해외 개발자 활용 서비스",
+    url: "/",
+  },
+];

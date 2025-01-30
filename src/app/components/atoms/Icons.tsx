@@ -5,14 +5,15 @@ interface IconProps {
   IconName: keyof typeof PhosphorIcons;
   size?: number;
   weight?: string;
+  addClass?: string;
 }
 
-const Icons: React.FC<IconProps> = ({ IconName, size, weight }) => {
-  const Icon = PhosphorIcons[IconName];
+const Icons: React.FC<IconProps> = ({ IconName, size, weight, addClass }) => {
+  const Icons = PhosphorIcons[IconName];
 
   return (
-    <div>
-      <Icon size={size} weight={weight} />
+    <div className={addClass}>
+      <Icons size={size} weight={weight} />
     </div>
   );
 };
