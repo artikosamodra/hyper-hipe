@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 import { datacards } from "@/app/libs/data";
 import {
   cardVariants,
-  mobileCardVariants,
+  mobileVariants,
   tooltipVariants,
 } from "@/app/libs/motion/motion";
 import Icons from "../atoms/Icons";
@@ -76,9 +76,16 @@ const ProfileSlider = () => {
               key={card.id}
               className="rounded-[12px] flex justify-center"
               // initial={{ opacity: 0 }}
-              variants={mediaScreen ? cardVariants : mobileCardVariants}
+              variants={mediaScreen ? cardVariants : mobileVariants}
               animate={getPosition(index)}
               onAnimationComplete={animationComplete}
+              style={{
+                position:
+                  getPosition(index) === "left" ||
+                  getPosition(index) === "right"
+                    ? "absolute"
+                    : "static",
+              }}
             >
               <ProfileCard
                 src={card.src}

@@ -11,7 +11,7 @@ export const cardVariants = {
     opacity: [0, 1],
     scale: 0.9,
     zIndex: 1,
-    position: "absolute" as const,
+    // position: "absolute",
     transition: { duration: 0.5 },
   },
   right: {
@@ -19,12 +19,12 @@ export const cardVariants = {
     opacity: [0, 1],
     scale: 0.9,
     zIndex: 1,
-    position: "absolute" as const,
+    // position: "absolute",
     transition: { duration: 0.5 },
   },
 };
 
-export const mobileCardVariants = {
+export const mobileVariants = {
   center: {
     x: 0,
     opacity: [0, 1],
@@ -37,7 +37,7 @@ export const mobileCardVariants = {
     opacity: [0, 1],
     scale: 0.6,
     zIndex: 1,
-    position: "absolute" as const,
+    // position: "absolute",
     transition: { duration: 0.5 },
   },
   right: {
@@ -45,10 +45,11 @@ export const mobileCardVariants = {
     opacity: [0, 1],
     scale: 0.6,
     zIndex: 1,
-    position: "absolute" as const,
+    // position: "absolute",
     transition: { duration: 0.5 },
   },
 };
+
 export const tooltipVariants = {
   hidden: { opacity: 0, y: -10 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
