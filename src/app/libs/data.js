@@ -52,3 +52,42 @@ export const datacards = [
     info: ["コンテンツクリエイター", "アーティスト", "インフルエンサー"],
   },
 ];
+
+export const dataslideshow = [
+  {
+    id: 1,
+    src: "/img/icons/marketing.png",
+    alt: "icon-marketing",
+    title: "해외 마케팅",
+  },
+  {
+    id: 2,
+    src: "/img/icons/image.png",
+    alt: "icon-image",
+    title: "퍼블리셔",
+  },
+  {
+    id: 3,
+    src: "/img/icons/box.png",
+    alt: "icon-box",
+    title: "캐드원(제도사)",
+  },
+  {
+    id: 4,
+    src: "/img/icons/target.png",
+    alt: "icon-target",
+    title: "해외 세일즈",
+  },
+  {
+    id: 5,
+    src: "/img/icons/call.png",
+    alt: "icon-call",
+    title: "해외 CS",
+  },
+  {
+    id: 6,
+    src: "/img/icons/presentation.png",
+    alt: "icon-presentation",
+    title: "해외 마케팅",
+  },
+];
